@@ -29,6 +29,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -83,11 +84,19 @@ public class SignIn extends AppCompatActivity implements LoaderCallbacks<Cursor>
             }
         });
 
-        Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
-        mEmailSignInButton.setOnClickListener(new OnClickListener() {
+        Button mSignInButton = (Button) findViewById(R.id.sign_in_button);
+        mSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                attemptLogin();
+//                attemptLogin();
+
+                if(mEmailView.length()!=0 && mPasswordView.length()!=0){
+                    Intent i = new Intent(SignIn.this, MainInterface.class);
+                    startActivity(i);
+                }else{
+                    Toast.makeText(SignIn.this, "Error",Toast.LENGTH_LONG).show();
+                }
+
             }
         });
 
