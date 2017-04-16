@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="com.usramrizal.bojonegoro_tourism.Login"
+    tools:context="com.usramrizal.bojonegoro_tourism.activity_signUp"
     android:background="@drawable/gradient_color">
 
     <RelativeLayout
@@ -21,7 +21,7 @@
             app:srcCompat="@drawable/footer" />
     </RelativeLayout>
 
-    <!-- Login progress -->
+    <!-- activity_signUp progress -->
     <ProgressBar
         android:id="@+id/login_progress_signup"
         style="?android:attr/progressBarStyleLarge"
@@ -65,7 +65,7 @@
                     android:layout_marginLeft="50dp"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:maxLines="1"
                     android:textCursorDrawable="@color/gplus"
                     android:textColorHint="@color/gplus"
@@ -84,7 +84,7 @@
                     android:layout_marginRight="50dp"
                     android:layout_marginLeft="50dp"
                     android:hint="Password"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:imeActionId="@+id/login"
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
@@ -105,7 +105,7 @@
                 android:textAllCaps="false"
                 android:text="Sign Up"
                 android:textStyle="bold"
-                android:textSize="7pt"
+                android:textSize="16sp"
                 android:background="@color/button" />
 
             <View
@@ -129,7 +129,7 @@
                 android:drawableLeft="@drawable/ic_fb"
                 android:paddingLeft="30dp"
                 android:textStyle="bold"
-                android:textSize="6pt"
+                android:textSize="16sp"
                 android:background="@color/fb" />
 
             <Button
@@ -144,7 +144,7 @@
                 android:paddingLeft="30dp"
                 android:textAllCaps="false"
                 android:textStyle="bold"
-                android:textSize="6pt"
+                android:textSize="16sp"
                 android:background="@color/gplus" />
 
             <LinearLayout
@@ -160,7 +160,7 @@
                     android:text="Already have an account ?"
                     android:textAllCaps="false"
                     android:textAlignment="center"
-                    android:textSize="6.5pt"
+                    android:textSize="16sp"
                     android:textColor="#000000"
                     android:paddingRight="10dp"
                     />
@@ -171,7 +171,7 @@
                     android:text="Log In"
                     android:onClick="onClick"
                     android:textAllCaps="false"
-                    android:textSize="6.5pt"
+                    android:textSize="16sp"
                     android:textColor="@color/gplus"
                     />
             </LinearLayout>

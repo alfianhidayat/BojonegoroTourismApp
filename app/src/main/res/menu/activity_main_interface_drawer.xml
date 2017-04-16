@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_main"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Main" />
-        <item
-            android:id="@+id/nav_menu1"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Menu 1" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
-    </group>
+    <item android:title="Discover Bojonegoro">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_dahsboard"
+                android:title="Dashboard" />
+            <item
+                android:id="@+id/nav_maps"
+                android:icon="@drawable/ic_maps"
+                android:title="Maps" />
+            <item
+                android:id="@+id/nav_pariwisata"
+                android:icon="@drawable/ic_pariwisata"
+                android:title="Pariwisata" />
+            <item
+                android:id="@+id/nav_hotel"
+                android:icon="@drawable/ic_hotel"
+                android:title="Hotel" />
+            <item
+                android:id="@+id/nav_kuliner"
+                android:icon="@drawable/ic_food"
+                android:title="Kuliner" />
+            <item
+                android:id="@+id/nav_hiburan"
+                android:icon="@drawable/ic_entertainment"
+                android:title="Hiburan" />
+
+        </menu>
+    </item>
 
     <item android:title="Communicate">
         <menu>
@@ -27,9 +38,9 @@
                 android:icon="@drawable/ic_menu_share"
                 android:title="Share" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_logout"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Logout" />
         </menu>
     </item>
 

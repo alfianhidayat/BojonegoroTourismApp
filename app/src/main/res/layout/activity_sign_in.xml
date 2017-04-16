@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="com.usramrizal.bojonegoro_tourism.SignIn"
+    tools:context="com.usramrizal.bojonegoro_tourism.activity_signIn"
     android:background="@drawable/gradient_color">
 
     <RelativeLayout
@@ -21,7 +21,7 @@
             app:srcCompat="@drawable/footer" />
     </RelativeLayout>
 
-    <!-- Login progress -->
+    <!-- activity_signUp progress -->
     <ProgressBar
         android:id="@+id/login_progress"
         style="?android:attr/progressBarStyleLarge"
